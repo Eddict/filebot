@@ -746,6 +746,7 @@
 		<mkdir dir="${dir.dist}" />
 		<mkdir dir="${dir.release}" />
 		<mkdir dir="${dir.cache}" />
+		<mkdir dir="${dir.lib}" />
 
 		<path id="lib.classpath">
 			<fileset dir="${dir.lib}" includes="**/*.jar" excludes="**/*-jdk14.jar" />
