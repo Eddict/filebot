@@ -473,8 +473,8 @@
 	<target name="deb" depends="revision" description="Build Debian package">
 		<property name="dir.staging" location="${dir.dist}/deb" />
 
+		<mkdir dir="${dir.lib}/jre/Linux-x86_64"/>
 		<copy todir="${dir.staging}/jre">
-			<mkdir dir="${dir.lib}/jre/Linux-x86_64"/>
 			<fileset dir="${dir.lib}/jre/Linux-x86_64" />
 		</copy>
 
