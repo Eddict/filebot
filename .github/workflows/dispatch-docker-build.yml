@@ -1,0 +1,21 @@
+name: Trigger 'docker build filebot from source' in Eddict/filebot-docker
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - '*'
+      
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dispatch "docker build filebot from source" in Eddict/filebot-docker
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: '${{ secrets.PAT_TOKEN }}'
+          repository: Eddict/filebot-docker 
+          event-type: dispatch-docker-build
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+          
