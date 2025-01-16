@@ -1,3 +1,13 @@
+<ivy-module version="2.0">
+    <info organisation="" module="" />
+    <configurations>
+        <conf name="binaries" />
+    </configurations>
+    <dependencies>
+        <dependency org="junit" name="junit" rev="4.12" conf="binaries->default" />
+    </dependencies>
+</ivy-module>
+
 <project xmlns:ivy="antlib:org.apache.ivy.ant">
     <property name="ivy.install.version" value="2.5.3"/>
     <condition property="ivy.home" value="${env.IVY_HOME}">

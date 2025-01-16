@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<project name="filebot" default="jar" xmlns:if="ant:if" xmlns:unless="ant:unless">
+<project name="filebot" default="jar"
+	xmlns:if="ant:if"
+	xmlns:unless="ant:unless"
+    xmlns:ivy="antlib:org.apache.ivy.ant">
 
 	<!-- define source dirs -->
 	<property name="dir.source" location="${basedir}/source" />
@@ -20,6 +23,15 @@
 	<property name="dir.release.index" location="${basedir}/release" />
 	<property name="dir.release" location="${dir.release.index}/${release}" />
 
+
+	<!-- Ivy-related settings -->
+	<property name="ivy.install.version" value="2.5.3" />
+	<condition property="ivy.home" value="${env.IVY_HOME}">
+		<isset property="env.IVY_HOME" />
+	</condition>
+	<property name="ivy.home" value="${user.home}/.ant" />
+	<property name="ivy.jar.dir" value="${ivy.home}/lib" />
+	<property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar" />
 
 	<!-- timestamp variables -->
 	<tstamp prefix="tstamp">
@@ -730,8 +742,12 @@
 	<target name="clean" description="Delete build artifacts">
 		<delete dir="${dir.dist}" />
 		<delete dir="${dir.build}" />
+		<delete dir="${lib.dir}" />
 	</target>
 
+	<target name="clean-all" depends="clean" description="clean ivy cache">
+		<ivy:cleancache />
+	</target>
 
 	<target name="revision" depends="init">
 		<exec executable="git" outputproperty="revision" failonerror="true">
@@ -740,8 +756,27 @@
 		<echo>Revision: ${revision}</echo>
 	</target>
 
+	<!-- new target to get dependencies, after first obtaining Ivy -->
+	<target name="get-dependencies" depends="init-ivy">
+		<ivy:retrieve conf="binaries" pattern="lib/[conf]/[artifact](-[classifier]).[ext]" />
+	</target>
 
-	<target name="init">
+	<!-- Try to load Ivy from either the local lib dir or Ant's lib dir -->
+	<target name="init-ivy" depends="download-ivy">
+		<path id="ivy.lib.path">
+			<fileset dir="${ivy.jar.dir}" includes="*.jar" />
+		</path>
+		<taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path" />
+	</target>
+
+	<!-- new target to download Ivy if necessary, considering desired
+     version, file timestamp, and whether the 'net can be reached -->
+	<target name="download-ivy" unless="offline">
+		<mkdir dir="${ivy.jar.dir}" />
+		<get src="https://repo1.maven.org/maven2/org/apache/ivy/ivy/${ivy.install.version}/ivy-${ivy.install.version}.jar" dest="${ivy.jar.file}" usetimestamp="true" />
+	</target>
+
+	<target name="init" depends="get-dependencies">
 		<mkdir dir="${dir.build}" />
 		<mkdir dir="${dir.dist}" />
 		<mkdir dir="${dir.release}" />
@@ -752,8 +787,8 @@
 			<fileset dir="${dir.lib}" includes="**/*.jar" excludes="**/*-jdk14.jar" />
 		</path>
 		<!-- https://stackoverflow.com/a/62785147 -->
-        <ant antfile="ivy.xml"/>
-   		<taskdef resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
+		<ant antfile="ivy.xml" />
+		<taskdef resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
 		<taskdef resource="net/filebot/ant/spk/antlib.xml" classpathref="lib.classpath" />
 		<taskdef resource="org/vafer/jdeb/ant/antlib.xml" classpathref="lib.classpath" />
 		<taskdef name="bundleapp" classname="com.oracle.appbundler.AppBundlerTask" classpathref="lib.classpath" />
