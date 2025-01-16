@@ -786,8 +786,7 @@
 		<path id="lib.classpath">
 			<fileset dir="${dir.lib}" includes="**/*.jar" excludes="**/*-jdk14.jar" />
 		</path>
-		<!-- https://stackoverflow.com/a/62785147 -->
-		<ant antfile="ivy.xml" />
+
 		<taskdef resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
 		<taskdef resource="net/filebot/ant/spk/antlib.xml" classpathref="lib.classpath" />
 		<taskdef resource="org/vafer/jdeb/ant/antlib.xml" classpathref="lib.classpath" />
