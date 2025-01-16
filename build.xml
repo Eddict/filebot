@@ -474,6 +474,7 @@
 		<property name="dir.staging" location="${dir.dist}/deb" />
 
 		<copy todir="${dir.staging}/jre">
+			<mkdir dir="${dir.lib}/jre/Linux-x86_64"/>
 			<fileset dir="${dir.lib}/jre/Linux-x86_64" />
 		</copy>
 
