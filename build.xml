@@ -4,7 +4,7 @@
 	xmlns:unless="ant:unless"
     xmlns:ivy="antlib:org.apache.ivy.ant"
     xmlns:groovy="antlib:org.codehaus.groovy"
-    xmlns:spk="antlib:net.filebot.ant.spk"
+    xmlns:filebot="antlib:net.filebot.ant.spk"
     xmlns:jdeb="antlib:org.vafer.jdeb.ant">
 
 	<!-- define source dirs -->
@@ -798,7 +798,7 @@
              module="groovy-all" 
              revision="3.0.23" 
              inline="true" 
-             pathid="grolibovy.classpath" 
+             pathid="lib.classpath" 
              transitive="false" 
              log="quiet"
 		/>
