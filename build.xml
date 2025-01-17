@@ -2,7 +2,10 @@
 <project name="filebot" default="jar"
 	xmlns:if="ant:if"
 	xmlns:unless="ant:unless"
-    xmlns:ivy="antlib:org.apache.ivy.ant">
+    xmlns:ivy="antlib:org.apache.ivy.ant"
+    xmlns:groovy="antlib:org.codehaus.groovy"
+    xmlns:spk="antlib:net.filebot.ant.spk"
+    xmlns:jdeb="antlib:org.vafer.jdeb.ant">
 
 	<!-- define source dirs -->
 	<property name="dir.source" location="${basedir}/source" />
@@ -789,10 +792,10 @@
 		<path id="lib.classpath">
 			<fileset dir="${dir.lib}" includes="**/*.jar" excludes="**/*-jdk14.jar" />
 		</path>
-
-		<taskdef resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
-		<taskdef resource="net/filebot/ant/spk/antlib.xml" classpathref="lib.classpath" />
-		<taskdef resource="org/vafer/jdeb/ant/antlib.xml" classpathref="lib.classpath" />
+ 
+		<taskdef uri="antlib:org.codehaus.groovy" resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
+		<taskdef uri="ntlib:net.filebot.ant.spk" resource="net/filebot/ant/spk/antlib.xml" classpathref="lib.classpath" />
+		<taskdef uri="antlib:org.vafer.jdeb.ant" resource="org/vafer/jdeb/ant/antlib.xml" classpathref="lib.classpath" />
 	</target>
 
 
