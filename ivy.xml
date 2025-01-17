@@ -7,7 +7,7 @@
         <!-- <dependency org="junit" name="junit" rev="4.12" conf="binaries->default" /> -->
         <dependency org="org.codehaus.groovy" name="groovy-all" rev="3.0.23">
             <artifact name="groovy-all" type="pom" ext="pom" />
-        <dependency/>
+        </dependency>
         <dependency org="org.vafer" name="jdeb" rev="1.12" />
         <dependency org="net.filebot" name="ant-spk" rev="0.7.1" />
     </dependencies>
