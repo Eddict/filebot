@@ -470,7 +470,7 @@
 	</target>
 
 
-	<target name="deb" depends="revision" description="Build Debian package">
+	<target name="deb" depends="revision,jar" description="Build Debian package">
 		<property name="dir.staging" location="${dir.dist}/deb" />
 
 		<mkdir dir="${dir.lib}/jre/Linux-x86_64"/>
