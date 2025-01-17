@@ -794,7 +794,7 @@
 			<fileset dir="${dir.lib}" includes="**/*.jar" excludes="**/*-jdk14.jar" />
 		</path>
 
-        <ivy:cachepath 
+        <!-- <ivy:cachepath 
              organisation="org.codehaus.groovy" 
              module="groovy-all" 
              revision="3.0.23" 
@@ -802,7 +802,7 @@
              pathid="lib.classpath" 
              transitive="false" 
              log="quiet"
-		/>
+		/> -->
 
 		<!-- <taskdef uri="antlib:org.codehaus.groovy.ant.Groovy" resource="org/codehaus/groovy/ant/Groovy/antlib.xml" classpathref="lib.classpath" /> -->
 		<!-- <taskdef resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" /> -->
