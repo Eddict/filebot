@@ -3,9 +3,9 @@
 	xmlns:if="ant:if"
 	xmlns:unless="ant:unless"
     xmlns:ivy="antlib:org.apache.ivy.ant"
-    xmlns:groovy="antlib:org.codehaus.groovy.ant.Groovy"
-    xmlns:filebot="antlib:net.filebot.ant.spk"
-    xmlns:jdeb="antlib:org.vafer.jdeb.ant">
+    xmlns:groovy="antlib:org.codehaus.groovy">
+    <!-- xmlns:filebot="antlib:net.filebot.ant.spk"
+    xmlns:jdeb="antlib:org.vafer.jdeb.ant"> -->
 
 	<!-- define source dirs -->
 	<property name="dir.source" location="${basedir}/source" />
@@ -805,8 +805,8 @@
 		/> -->
 
 		<!-- <taskdef uri="antlib:org.codehaus.groovy.ant.Groovy" resource="org/codehaus/groovy/ant/Groovy/antlib.xml" classpathref="lib.classpath" /> -->
-		<!-- <taskdef resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" /> -->
-		<taskdef uri="antlib:org.codehaus.groovy.ant.Groovy" resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
+		<taskdef resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
+		<!-- <taskdef uri="antlib:org.codehaus.groovy.ant.Groovy" resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" /> -->
 		<taskdef uri="ntlib:net.filebot.ant.spk" resource="net/filebot/ant/spk/antlib.xml" classpathref="lib.classpath" />
 		<taskdef uri="antlib:org.vafer.jdeb.ant" resource="org/vafer/jdeb/ant/antlib.xml" classpathref="lib.classpath" />
 		<!-- <taskdef name="bundleapp" classname="com.oracle.appbundler.AppBundlerTask" classpathref="lib.classpath" /> -->
