@@ -185,7 +185,7 @@
 		<fileset id="jar.classpath" dir="${dir.lib}" includesfile="${dir.lib}/jar.includes" />
 
 		<!-- rebuild each dependency jar with zero compression and remove signatures -->
-		<groovy src="${dir.lib}/jar.groovy" />
+		<groovy:groovy src="${dir.lib}/jar.groovy" />
 
 		<path id="jar.classpath">
 			<fileset dir="${dir.dist}/lib">
