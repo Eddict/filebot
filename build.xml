@@ -798,12 +798,12 @@
              module="groovy-all" 
              revision="3.0.23" 
              inline="true" 
-             pathid="groovy.classpath" 
+             pathid="grolibovy.classpath" 
              transitive="false" 
              log="quiet"
 		/>
 
-		<taskdef uri="antlib:org.codehaus.groovy" resource="org/codehaus/groovy/antlib.xml" classpathref="groovy.classpath" />
+		<taskdef uri="antlib:org.codehaus.groovy" resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
 		<taskdef uri="ntlib:net.filebot.ant.spk" resource="net/filebot/ant/spk/antlib.xml" classpathref="lib.classpath" />
 		<taskdef uri="antlib:org.vafer.jdeb.ant" resource="org/vafer/jdeb/ant/antlib.xml" classpathref="lib.classpath" />
 	</target>
