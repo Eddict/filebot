@@ -14,8 +14,8 @@
         <dependency org="net.filebot" name="ant-spk" rev="0.7.1" />
 
 <!-- https://github.com/rednoah/ant-installer/blob/master/ivy.xml -->
-		<dependency org="org.apache.ant" name="ant" rev="1.10.15" />
+		<!-- <dependency org="org.apache.ant" name="ant" rev="1.10.15" /> -->
 		<!-- <dependency org="org.apache.groovy" name="groovy-ant" rev="4.0.24" /> -->
-		<dependency org="org.codehaus.groovy" name="groovy-ant" rev="3.0.23" />
+		<!-- <dependency org="org.codehaus.groovy" name="groovy-ant" rev="3.0.23" /> -->
     </dependencies>
 </ivy-module>
