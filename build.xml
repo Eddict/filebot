@@ -805,6 +805,7 @@
              log="quiet"
 		/> -->
 
+		<taskdef resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
 		<taskdef resource="net/filebot/ant/spk/antlib.xml" classpathref="lib.classpath" />
 		<taskdef resource="org/vafer/jdeb/ant/antlib.xml" classpathref="lib.classpath" />
 		<!-- <taskdef uri="antlib:org.codehaus.groovy.ant.Groovy" resource="org/codehaus/groovy/ant/Groovy/antlib.xml" classpathref="lib.classpath" /> -->
