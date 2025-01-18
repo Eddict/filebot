@@ -2,8 +2,8 @@
 <project name="filebot" default="jar"
 	xmlns:if="ant:if"
 	xmlns:unless="ant:unless"
-    xmlns:ivy="antlib:org.apache.ivy.ant"
-    xmlns:groovy="antlib:org.codehaus.groovy">
+    xmlns:ivy="antlib:org.apache.ivy.ant">
+    <!-- xmlns:groovy="antlib:org.codehaus.groovy"> -->
     <!-- xmlns:filebot="antlib:net.filebot.ant.spk"
     xmlns:jdeb="antlib:org.vafer.jdeb.ant"> -->
 
