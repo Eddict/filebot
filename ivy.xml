@@ -11,7 +11,7 @@
         <!-- <dependency org="org.apache.groovy" name="groovy" rev="4.0.24"/> -->
 
         <!-- https://github.com/groovy/groovy-core/commit/6fdb5eadbdc5b71473170aa4b18115346a0c3c93 -->
-        <dependency org="org.codehaus.groovy" name="groovy" rev="2.2.2"/>
+        <!-- <dependency org="org.codehaus.groovy" name="groovy" rev="2.2.2"/> -->
         <!-- <dependency org="org.codehaus.groovy" name="groovy" rev="3.0.23"/> -->
 
         <dependency org="org.vafer" name="jdeb" rev="1.12" />
