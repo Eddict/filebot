@@ -205,7 +205,7 @@
 			debug="yes"
 			includeAntRuntime="no"
 			modulepath="modules"
-			source="9"
+			source="9">
 			<classpath refid="jar.classpath" />
 			<!-- <modulepath path="${jfx.path}" /> -->
 			<compilerarg line="--module-path ${dir.lib}/javafx-sdk-23.0.1/lib/" />
