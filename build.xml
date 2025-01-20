@@ -206,10 +206,9 @@
 			includeAntRuntime="no"
 			modulepath="modules"
 			source="9"
-			excludesfile="${dir.lib}/src.excludes">
 			<classpath refid="jar.classpath" />
 			<!-- <modulepath path="${jfx.path}" /> -->
-			<compilerarg line="--module-path ${lib.dir}/javafx-sdk-23.0.1/lib/" />
+			<compilerarg line="--module-path ${dir.lib}/javafx-sdk-23.0.1/lib/" />
 			<compilerarg line="--add-modules ALL-MODULE-PATH" />
 		</javac>
 
