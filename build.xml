@@ -796,6 +796,7 @@
 	<target name="init" depends="get-dependencies">
 		<mkdir dir="${dir.build}" />
 		<mkdir dir="${dir.dist}" />
+		<mkdir dir="${dir.dist}/lib" />
 		<mkdir dir="${dir.release}" />
 		<mkdir dir="${dir.cache}" />
 		<mkdir dir="${dir.lib}" />
