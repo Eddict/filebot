@@ -28,7 +28,6 @@
 
 
 	<!-- Ivy-related settings -->
-	<property name="ivy.install.version" value="2.5.3" />
 	<condition property="ivy.home" value="${env.IVY_HOME}">
 		<isset property="env.IVY_HOME" />
 	</condition>
@@ -781,19 +780,11 @@
 	</target>
 
 	<!-- Try to load Ivy from either the local lib dir or Ant's lib dir -->
-	<target name="init-ivy" depends="download-ivy">
+	<target name="init-ivy">
 		<path id="ivy.lib.path">
 			<fileset dir="${ivy.jar.dir}" includes="*.jar" />
 		</path>
-		<taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path" />
-	</target>
-
-	<!-- new target to download Ivy if necessary, considering desired
-     version, file timestamp, and whether the 'net can be reached -->
-	<target name="download-ivy" unless="offline">
-		<mkdir dir="${ivy.jar.dir}" />
-		<echo message="installing ivy..."/>
-		<get src="https://repo1.maven.org/maven2/org/apache/ivy/ivy/${ivy.install.version}/ivy-${ivy.install.version}.jar" dest="${ivy.jar.file}" usetimestamp="true" />
+		<!-- <taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path" /> -->
 	</target>
 
 	<target name="init" depends="get-dependencies">
