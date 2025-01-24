@@ -205,9 +205,9 @@
 			encoding="utf-8"
 			debug="yes"
 			includeAntRuntime="no"
-			modulepath="modules"
 			source="9">
 			<!-- excludesfile="${dir.lib}/src.excludes" -->
+			<!-- modulepath="modules" -->
 			<classpath refid="jar.classpath" />
 			<modulepath path="/usr/share/openjfx/lib" />
 			<!-- <classpath refid="jar.classpath" /> -->
