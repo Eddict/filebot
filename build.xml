@@ -208,7 +208,8 @@
 			source="9">
 			<!-- excludesfile="${dir.lib}/src.excludes" -->
 			<!-- modulepath="modules" -->
-			<classpath refid="jar.classpath" />
+			<!-- <classpath refid="jar.classpath" /> -->
+			<classpathref="jar.classpath" />
 			<modulepath path="/usr/share/openjfx/lib" />
 			<!-- <classpath refid="jar.classpath" /> -->
 			<!-- <modulepath path="${jfx.path}" /> -->
@@ -762,7 +763,7 @@
 	<target name="clean" description="Delete build artifacts">
 		<delete dir="${dir.dist}" />
 		<delete dir="${dir.build}" />
-		<delete dir="${lib.dir}" />
+		<!-- <delete dir="${lib.dir}" /> -->
 	</target>
 
 	<target name="clean-all" depends="clean" description="clean ivy cache">
@@ -778,7 +779,8 @@
 
 	<!-- new target to get dependencies, after first obtaining Ivy -->
 	<target name="get-dependencies" depends="init-ivy">
-		<ivy:retrieve conf="binaries" pattern="lib/[conf]/[artifact](-[classifier]).[ext]" />
+		<!-- <ivy:retrieve conf="binaries" pattern="lib/[conf]/[artifact](-[classifier]).[ext]" /> -->
+		<ivy:retrieve conf="binaries" pattern="${dir.lib}/[conf]/[artifact]-[revision].[ext]" />
 	</target>
 
 	<target name="download-customs" description="Download JARs from sustom sources">
