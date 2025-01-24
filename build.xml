@@ -183,18 +183,18 @@
 
 	<target name="jar" depends="revision">
 		<!-- select jar dependencies -->
-		<fileset id="jar.classpath" dir="${dir.lib}" includesfile="${dir.lib}/jar.includes" />
+		<!-- <fileset id="jar.classpath" dir="${dir.lib}" includesfile="${dir.lib}/jar.includes" /> -->
 
 		<!-- rebuild each dependency jar with zero compression and remove signatures -->
 		<!-- <taskdef resource="org/codehaus/groovy/antlib.xml" classpathref="lib.classpath" />
 		<groovy src="${dir.lib}/jar.groovy" /> -->
 
 		<path id="jar.classpath">
-			<fileset dir="${dir.dist}/lib">
-				<include name="*.jar" />
-			</fileset>
+			<!-- <fileset dir="${dir.dist}/lib" includes="**/*.jar" /> -->
+			<fileset dir="${dir.lib}" includes="**/*.jar" />
+			<pathelement path="${dir.build}"/>
 		</path>
-		<manifestclasspath property="jar.classpath" jarfile="${dir.dist}/lib/${package.name}.jar">
+		<manifestclasspath property="manifest.classpath" jarfile="${dir.dist}/lib/${package.name}.jar">
 			<classpath refid="jar.classpath" />
 		</manifestclasspath>
 
@@ -234,7 +234,7 @@
 			<fileset dir="${dir.build}" />
 			<manifest>
 				<attribute name="Main-Class" value="${main.class}" />
-				<attribute name="Class-Path" value="${jar.classpath}" />
+				<attribute name="Class-Path" value="${manifest.classpath}" />
 				<attribute name="Build-Date" value="${tstamp.date}" />
 				<attribute name="Build-Revision" value="${revision}" />
 			</manifest>
