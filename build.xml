@@ -26,14 +26,17 @@
 	<property name="dir.release.index" location="${basedir}/release" />
 	<property name="dir.release" location="${dir.release.index}/${release}" />
 
+	<!-- define javac compile properties default values -->
+	<property name="ant.build.javac.source" value="${jvm.version}" />
+	<property name="ant.build.javac.target" value="${jvm.version}" />
 
 	<!-- Ivy-related settings -->
-	<property environment="env"/>
+	<property environment="env" />
 	<condition property="ivy.home" value="${env.IVY_HOME}">
 		<isset property="env.IVY_HOME" />
 	</condition>
 	<property name="ivy.home" value="${user.home}/.ant" />
-	<echo message="ivy.home=${ivy.home}"/>
+	<echo message="ivy.home=${ivy.home}" />
 	<property name="ivy.jar.dir" value="${ivy.home}/lib" />
 	<property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar" />
 
@@ -192,21 +195,22 @@
 		<path id="jar.classpath">
 			<!-- <fileset dir="${dir.dist}/lib" includes="**/*.jar" /> -->
 			<fileset dir="${dir.lib}" includes="**/*.jar" />
-			<pathelement path="${dir.build}"/>
+			<pathelement path="${dir.build}" />
 		</path>
 		<manifestclasspath property="manifest.classpath" jarfile="${dir.dist}/lib/${package.name}.jar">
 			<classpath refid="jar.classpath" />
 		</manifestclasspath>
+		<echo message="jar.classpath=${jar.classpath}" />
 
 		<!-- compile -->
 		<javac srcdir="${dir.source}"
 			classpathref="jar.classpath"
 			destdir="${dir.build}"
-			release="${jvm.version}"
 			encoding="utf-8"
 			debug="yes"
 			includeAntRuntime="no"
 			source="9">
+			<!-- release="${jvm.version}" -->
 			<!-- excludesfile="${dir.lib}/src.excludes" -->
 			<!-- modulepath="modules" -->
 			<!-- <classpath refid="jar.classpath" /> -->
@@ -491,7 +495,7 @@
 	<target name="deb" depends="revision" description="Build Debian package">
 		<property name="dir.staging" location="${dir.dist}/deb" />
 
-		<mkdir dir="${dir.lib}/jre/Linux-x86_64"/>
+		<mkdir dir="${dir.lib}/jre/Linux-x86_64" />
 		<copy todir="${dir.staging}/jre">
 			<fileset dir="${dir.lib}/jre/Linux-x86_64" />
 		</copy>
@@ -786,10 +790,10 @@
 	<target name="download-customs" description="Download JARs from sustom sources">
  		<mkdir dir="${dir.lib}/custom" />
        	<get dest="${dir.lib}/custom/iconloader.jar">
-			<url url="https://github.com/bulenkov/iconloader/raw/refs/heads/master/iconloader.jar"/> 
+			<url url="https://github.com/bulenkov/iconloader/raw/refs/heads/master/iconloader.jar" /> 
         </get>		
         <get dest="${dir.lib}/custom/normalizer-1.3.1.jar">
-            <url url="https://maven.indexdata.com/com/ibm/icu/text/normalizer/1.3.1/normalizer-1.3.1.jar"/> 
+            <url url="https://maven.indexdata.com/com/ibm/icu/text/normalizer/1.3.1/normalizer-1.3.1.jar" /> 
         </get>		
 		<echo>Retrieving custom JARs</echo>
 	</target>
