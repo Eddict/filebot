@@ -194,13 +194,18 @@
 
 		<path id="jar.classpath">
 			<!-- <fileset dir="${dir.dist}/lib" includes="**/*.jar" /> -->
-			<fileset dir="${dir.lib}" includes="**/*.jar" />
+			<!-- <fileset dir="${dir.lib}" includes="**/*.jar" /> -->
+			<fileset dir="${dir.lib}">
+				<include name="**/*.jar"/>
+			</fileset>
 			<pathelement path="${dir.build}" />
 		</path>
 		<manifestclasspath property="manifest.classpath" jarfile="${dir.dist}/lib/${package.name}.jar">
 			<classpath refid="jar.classpath" />
 		</manifestclasspath>
-		<echo message="jar.classpath=${jar.classpath}" />
+		
+		<property name="jarclasspath" refid="jar.classpath" />
+		<echo message="jar.classpath = ${jarclasspath}" />
 
 		<!-- compile -->
 		<javac srcdir="${dir.source}"
