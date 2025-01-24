@@ -15,7 +15,7 @@ import java.util.Objects;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-import com.sun.jna.Platform;
+import net.java.dev.jna.jna.Platform;
 
 import groovy.lang.Closure;
 import groovy.lang.Script;

@@ -35,14 +35,14 @@ import java.util.stream.Stream;
 
 import org.apache.commons.io.IOUtils;
 
-import com.optimaize.langdetect.DetectedLanguage;
-import com.optimaize.langdetect.LanguageDetector;
-import com.optimaize.langdetect.LanguageDetectorBuilder;
-import com.optimaize.langdetect.i18n.LdLocale;
-import com.optimaize.langdetect.ngram.NgramExtractors;
-import com.optimaize.langdetect.profiles.BuiltInLanguages;
-import com.optimaize.langdetect.profiles.LanguageProfile;
-import com.optimaize.langdetect.profiles.LanguageProfileReader;
+import com.optimaize.languagedetector.DetectedLanguage;
+import com.optimaize.languagedetector.LanguageDetector;
+import com.optimaize.languagedetector.LanguageDetectorBuilder;
+import com.optimaize.languagedetector.i18n.LdLocale;
+import com.optimaize.languagedetector.ngram.NgramExtractors;
+import com.optimaize.languagedetector.profiles.BuiltInLanguages;
+import com.optimaize.languagedetector.profiles.LanguageProfile;
+import com.optimaize.languagedetector.profiles.LanguageProfileReader;
 
 import net.filebot.Language;
 import net.filebot.similarity.Match;

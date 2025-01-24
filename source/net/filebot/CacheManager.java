@@ -13,9 +13,9 @@ import java.nio.file.StandardOpenOption;
 import java.util.Scanner;
 import java.util.logging.Level;
 
-import net.sf.ehcache.CacheException;
-import net.sf.ehcache.config.Configuration;
-import net.sf.ehcache.config.DiskStoreConfiguration;
+import org.ehcach.CacheException;
+import org.ehcach.config.Configuration;
+import org.ehcach.config.DiskStoreConfiguration;
 
 public class CacheManager {
 
@@ -26,12 +26,12 @@ public class CacheManager {
 	}
 
 	private final File diskStore;
-	private final net.sf.ehcache.CacheManager manager;
+	private final org.ehcach.CacheManager manager;
 
 	public CacheManager() {
 		try {
 			this.diskStore = acquireDiskStore();
-			this.manager = net.sf.ehcache.CacheManager.create(new Configuration().diskStore(new DiskStoreConfiguration().path(diskStore.getPath())));
+			this.manager = org.ehcach.CacheManager.create(new Configuration().diskStore(new DiskStoreConfiguration().path(diskStore.getPath())));
 		} catch (IOException e) {
 			throw new CacheException(e);
 		}
@@ -39,7 +39,7 @@ public class CacheManager {
 
 	public synchronized Cache getCache(String name, CacheType type) {
 		if (!manager.cacheExists(name)) {
-			manager.addCache(new net.sf.ehcache.Cache(type.getConfiguration(name)));
+			manager.addCache(new org.ehcach.Cache(type.getConfiguration(name)));
 		}
 		return new Cache(manager.getCache(name), type);
 	}

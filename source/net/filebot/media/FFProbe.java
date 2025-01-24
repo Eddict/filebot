@@ -18,8 +18,8 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import com.cedarsoftware.util.io.JsonReader;
-import com.cedarsoftware.util.io.JsonWriter;
+import com.cedarsoftware.io.JsonReader;
+import com.cedarsoftware.io.JsonWriter;
 
 public class FFProbe implements MediaCharacteristics {
 

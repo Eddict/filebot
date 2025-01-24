@@ -8,8 +8,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import com.github.benmanes.caffeine.cache.Cache;
-import com.github.benmanes.caffeine.cache.Caffeine;
+import com.github.ben-manes.caffeine.cache.Cache;
+import com.github.ben-manes.caffeine.cache.Caffeine;
 
 import net.filebot.MetaAttributeView;
 import net.filebot.hash.HashType;

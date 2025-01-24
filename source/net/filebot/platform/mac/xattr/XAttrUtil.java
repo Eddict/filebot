@@ -6,7 +6,7 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sun.jna.Memory;
+import net.java.dev.jna.jna.Memory;
 
 public class XAttrUtil {
 

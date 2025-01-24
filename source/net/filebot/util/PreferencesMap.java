@@ -14,8 +14,8 @@ import java.util.logging.Level;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
 
-import com.cedarsoftware.util.io.JsonReader;
-import com.cedarsoftware.util.io.JsonWriter;
+import com.cedarsoftware.io.JsonReader;
+import com.cedarsoftware.io.JsonWriter;
 
 public class PreferencesMap<T> implements Map<String, T> {
 

@@ -32,9 +32,9 @@ import java.util.stream.Stream;
 import javax.script.Bindings;
 import javax.script.SimpleBindings;
 
-import org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation;
+import org.apache.groovy.runtime.typehandling.DefaultTypeTransformation;
 
-import com.sun.jna.Platform;
+import net.java.dev.jna.jna.Platform;
 
 import groovy.lang.Closure;
 import groovy.lang.MissingPropertyException;

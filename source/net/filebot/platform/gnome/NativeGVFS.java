@@ -3,8 +3,8 @@ package net.filebot.platform.gnome;
 
 import java.io.File;
 
-import com.sun.jna.Native;
-import com.sun.jna.Pointer;
+import net.java.dev.jna.jna.Native;
+import net.java.dev.jna.jna.Pointer;
 
 public class NativeGVFS implements GVFS {
 

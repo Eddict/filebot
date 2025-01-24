@@ -16,7 +16,7 @@ import java.util.function.Predicate;
 import org.w3c.dom.Document;
 
 import net.filebot.CachedResource.Transform;
-import net.sf.ehcache.Element;
+import org.ehcach.Element;
 
 public class Cache {
 
@@ -49,10 +49,10 @@ public class Cache {
 		return new CachedResource<T, Object>(key, resource, fetchIfModified(), validateJson(getText(UTF_8)), getJson(String.class::cast), ONE_DAY, this);
 	}
 
-	private final net.sf.ehcache.Cache cache;
+	private final org.ehcach.Cache cache;
 	private final CacheType cacheType;
 
-	public Cache(net.sf.ehcache.Cache cache, CacheType cacheType) {
+	public Cache(org.ehcach.Cache cache, CacheType cacheType) {
 		this.cache = cache;
 		this.cacheType = cacheType;
 	}
@@ -167,7 +167,7 @@ public class Cache {
 		private final Function<Object, V> read;
 		private final Function<V, Object> write;
 
-		public TypedCache(net.sf.ehcache.Cache cache, CacheType cacheType, Function<Object, V> read, Function<V, Object> write) {
+		public TypedCache(org.ehcach.Cache cache, CacheType cacheType, Function<Object, V> read, Function<V, Object> write) {
 			super(cache, cacheType);
 			this.read = read;
 			this.write = write;

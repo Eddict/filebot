@@ -1,8 +1,8 @@
 package net.filebot.platform.mac.xattr;
 
-import com.sun.jna.Library;
-import com.sun.jna.Native;
-import com.sun.jna.Pointer;
+import net.java.dev.jna.jna.Library;
+import net.java.dev.jna.jna.Native;
+import net.java.dev.jna.jna.Pointer;
 
 public interface XAttr extends Library {
 

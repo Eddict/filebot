@@ -30,7 +30,7 @@ import java.util.logging.StreamHandler;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.codehaus.groovy.runtime.StackTraceUtils;
+import org.apache.groovy.runtime.StackTraceUtils;
 
 import net.filebot.util.SystemProperty;
 

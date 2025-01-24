@@ -10,9 +10,9 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
-import com.cedarsoftware.util.io.JsonObject;
-import com.cedarsoftware.util.io.JsonReader;
-import com.cedarsoftware.util.io.JsonWriter;
+import com.cedarsoftware.io.JsonObject;
+import com.cedarsoftware.io.JsonReader;
+import com.cedarsoftware.io.JsonWriter;
 
 public class JsonUtilities {
 

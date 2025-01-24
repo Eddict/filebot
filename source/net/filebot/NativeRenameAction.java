@@ -9,10 +9,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
 
-import com.sun.jna.Platform;
-import com.sun.jna.platform.win32.Shell32;
-import com.sun.jna.platform.win32.ShellAPI;
-import com.sun.jna.platform.win32.ShellAPI.SHFILEOPSTRUCT;
+import net.java.dev.jna.jna.Platform;
+import net.java.dev.jna.jna.platform.win32.Shell32;
+import net.java.dev.jna.jna.platform.win32.ShellAPI;
+import net.java.dev.jna.jna.platform.win32.ShellAPI.SHFILEOPSTRUCT;
 
 public enum NativeRenameAction implements RenameAction {
 

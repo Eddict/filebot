@@ -42,8 +42,8 @@ import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import com.github.benmanes.caffeine.cache.Cache;
-import com.github.benmanes.caffeine.cache.Caffeine;
+import com.github.ben-manes.caffeine.cache.Cache;
+import com.github.ben-manes.caffeine.cache.Caffeine;
 
 import net.filebot.ApplicationFolder;
 import net.filebot.HistorySpooler;

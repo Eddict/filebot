@@ -10,7 +10,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.sun.jna.Platform;
+import net.java.dev.jna.jna.Platform;
 
 import net.filebot.platform.bsd.ExtAttrView;
 import net.filebot.platform.mac.MacXattrView;

@@ -10,10 +10,10 @@ import javax.script.ScriptContext;
 import javax.script.ScriptEngine;
 import javax.script.ScriptException;
 
-import org.codehaus.groovy.control.CompilerConfiguration;
-import org.codehaus.groovy.control.customizers.ImportCustomizer;
-import org.codehaus.groovy.jsr223.GroovyScriptEngineImpl;
-import org.codehaus.groovy.runtime.StackTraceUtils;
+import org.apache.groovy.control.CompilerConfiguration;
+import org.apache.groovy.control.customizers.ImportCustomizer;
+import org.apache.groovy.jsr223.GroovyScriptEngineImpl;
+import org.apache.groovy.runtime.StackTraceUtils;
 
 import groovy.lang.GroovyClassLoader;
 
