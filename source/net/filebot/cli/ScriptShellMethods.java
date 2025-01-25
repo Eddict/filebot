@@ -26,8 +26,8 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.logging.Level;
 
-import org.apache.groovy.runtime.DefaultGroovyMethods;
-import org.apache.groovy.runtime.typehandling.DefaultTypeTransformation;
+import org.codehaus.groovy.runtime.DefaultGroovyMethods;
+import org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation;
 
 import groovy.json.JsonBuilder;
 import groovy.lang.Closure;

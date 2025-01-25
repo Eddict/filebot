@@ -41,9 +41,9 @@ import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import org.apache.groovy.runtime.DefaultGroovyMethods;
-import org.apache.groovy.runtime.StringGroovyMethods;
-import org.apache.groovy.runtime.typehandling.DefaultTypeTransformation;
+import org.codehaus.groovy.runtime.DefaultGroovyMethods;
+import org.codehaus.groovy.runtime.StringGroovyMethods;
+import org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation;
 
 import com.ibm.icu.text.Transliterator;
 

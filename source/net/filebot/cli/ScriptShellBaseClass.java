@@ -32,7 +32,7 @@ import java.util.stream.Stream;
 import javax.script.Bindings;
 import javax.script.SimpleBindings;
 
-import org.apache.groovy.runtime.typehandling.DefaultTypeTransformation;
+import org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation;
 
 import net.java.dev.jna.jna.Platform;
 

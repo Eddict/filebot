@@ -10,7 +10,7 @@ import javax.script.ScriptContext;
 import javax.script.ScriptException;
 import javax.script.SimpleScriptContext;
 
-import org.apache.groovy.runtime.typehandling.DefaultTypeTransformation;
+import org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation;
 
 public class ExpressionFilter {
 

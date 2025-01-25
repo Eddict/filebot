@@ -4,7 +4,7 @@ import java.io.File;
 
 import javax.script.ScriptException;
 
-import org.apache.groovy.runtime.typehandling.DefaultTypeTransformation;
+import org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation;
 
 import groovy.lang.Closure;
 import net.filebot.RenameAction;

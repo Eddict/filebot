@@ -13,7 +13,7 @@ import javax.script.ScriptException;
 import org.apache.groovy.control.CompilerConfiguration;
 import org.apache.groovy.control.customizers.ImportCustomizer;
 import org.apache.groovy.jsr223.GroovyScriptEngineImpl;
-import org.apache.groovy.runtime.StackTraceUtils;
+import org.codehaus.groovy.runtime.StackTraceUtils;
 
 import groovy.lang.GroovyClassLoader;
 
