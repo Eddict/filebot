@@ -27,6 +27,7 @@
         <dependency org="org.apache.groovy" name="groovy" rev="4.0.4" conf="binaries->default" />
         <dependency org="org.codehaus.groovy" name="groovy" rev="3.0.23" conf="binaries->default" />
         <dependency org="net.java.dev.jna" name="jna" rev="5.16.0" conf="binaries->default" />
+        <dependency org="net.java.dev.jna" name="jna-platform" rev="5.16.0" conf="binaries->default" />
         <dependency org="org.kohsuke.args4j" name="args4j-maven-plugin" rev="2.37" conf="binaries->default" />
         <dependency org="com.optimaize.languagedetector" name="language-detector" rev="0.6" conf="binaries->default" />
         <dependency org="com.github.ben-manes.caffeine" name="caffeine" rev="3.2.0" conf="binaries->default" />
@@ -41,6 +42,9 @@
         <dependency org="org.imgscalr" name="imgscalr-lib" rev="4.2" conf="binaries->default" />
         <dependency org="com.miglayout" name="miglayout-swing" rev="11.4.2" conf="binaries->default" />
         <dependency org="one.util" name="streamex" rev="0.8.3" conf="binaries->default" />
+        <dependency org="net.sf.sevenzipjbinding" name="sevenzipjbinding" rev="16.02-2.01" conf="binaries->default" />  
+        <dependency org="org.apache.commons" name="commons-vfs2" rev="2.9.0" conf="binaries->default" />
+
 
         <!-- <dependency org="org.apache.groovy" name="groovy-all" rev="4.0.4" conf="binaries->default">
             <artifact name="groovy-all" type="pom" ext="pom"/>
