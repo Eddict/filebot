@@ -20,16 +20,16 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-import com.drewnoakes.imaging.ImageMetadataReader;
-import com.drewnoakes.imaging.ImageProcessingException;
-import com.drewnoakes.lang.GeoLocation;
-import com.drewnoakes.metadata.Directory;
-import com.drewnoakes.metadata.Metadata;
-import com.drewnoakes.metadata.Tag;
-import com.drewnoakes.metadata.exif.ExifIFD0Directory;
-import com.drewnoakes.metadata.exif.ExifSubIFDDirectory;
-import com.drewnoakes.metadata.exif.GpsDirectory;
-import com.drewnoakes.metadata.file.FileSystemDirectory;
+import com.drew.imaging.ImageMetadataReader;
+import com.drew.imaging.ImageProcessingException;
+import com.drew.lang.GeoLocation;
+import com.drew.metadata.Directory;
+import com.drew.metadata.Metadata;
+import com.drew.metadata.Tag;
+import com.drew.metadata.exif.ExifIFD0Directory;
+import com.drew.metadata.exif.ExifSubIFDDirectory;
+import com.drew.metadata.exif.GpsDirectory;
+import com.drew.metadata.file.FileSystemDirectory;
 
 import net.filebot.Cache;
 import net.filebot.CacheType;
