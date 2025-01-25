@@ -30,6 +30,10 @@
         <dependency org="com.github.ben-manes.caffeine" name="caffeine" rev="3.2.0" conf="binaries->default" />
         <dependency org="com.drewnoakes" name="metadata-extractor" rev="2.19.0" conf="binaries->default" />
         <dependency org="org.ehcache" name="ehcache" rev="3.10.8" conf="binaries->default" />
+        <dependency org="com.github.mpkorstanje" name="simmetrics-core" rev="4.1.1" conf="binaries->default" />
+        <dependency org="redstone.xmlrpc" name="xmlrpc" rev="1.1.1" conf="binaries->default" />
+        <dependency org="org.jsoup" name="jsoup" rev="1.18.3" conf="binaries->default" />
+
 
 
         <!-- <dependency org="org.apache.groovy" name="groovy-all" rev="4.0.4" conf="binaries->default">
