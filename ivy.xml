@@ -34,7 +34,7 @@
         <dependency org="com.drewnoakes" name="metadata-extractor" rev="2.19.0" conf="binaries->default" />
         <dependency org="org.ehcache" name="ehcache" rev="3.10.8" conf="binaries->default" />
         <dependency org="com.github.mpkorstanje" name="simmetrics-core" rev="4.1.1" conf="binaries->default" />
-        <!-- <dependency org="redstone.xmlrpc" name="xmlrpc" rev="1.1.1" conf="binaries->default" /> -->
+        <dependency org="redstone.xmlrpc" name="xmlrpc" rev="1.1.1" conf="binaries->default" />
         <dependency org="org.apache.xmlrpc" name="xmlrpc" rev="3.1.3" conf="binaries->default">
             <artifact name="xmlrpc" type="pom" ext="pom"/>
         </dependency>
@@ -44,6 +44,7 @@
         <dependency org="one.util" name="streamex" rev="0.8.3" conf="binaries->default" />
         <dependency org="net.sf.sevenzipjbinding" name="sevenzipjbinding" rev="16.02-2.01" conf="binaries->default" />  
         <dependency org="org.apache.commons" name="commons-vfs2" rev="2.9.0" conf="binaries->default" />
+        <dependency org="com.googlecode.lanterna" name="lanterna" rev="3.1.3" conf="binaries->default" />
 
 
         <!-- <dependency org="org.apache.groovy" name="groovy-all" rev="4.0.4" conf="binaries->default">
