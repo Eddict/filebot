@@ -13,9 +13,9 @@ import java.nio.file.StandardOpenOption;
 import java.util.Scanner;
 import java.util.logging.Level;
 
-import org.ehcach.CacheException;
-import org.ehcach.config.Configuration;
-import org.ehcach.config.DiskStoreConfiguration;
+import org.ehcache.CacheException;
+import org.ehcache.config.Configuration;
+import org.ehcache.config.DiskStoreConfiguration;
 
 public class CacheManager {
 

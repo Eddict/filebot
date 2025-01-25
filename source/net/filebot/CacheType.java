@@ -2,7 +2,7 @@ package net.filebot;
 
 import java.time.Duration;
 
-import org.ehcach.config.CacheConfiguration;
+import org.ehcache.config.CacheConfiguration;
 
 public enum CacheType {
 

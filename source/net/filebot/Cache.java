@@ -16,7 +16,7 @@ import java.util.function.Predicate;
 import org.w3c.dom.Document;
 
 import net.filebot.CachedResource.Transform;
-import org.ehcach.Element;
+import org.ehcache.Element;
 
 public class Cache {
 
