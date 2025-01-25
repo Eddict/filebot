@@ -19,7 +19,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.UIManager;
 
-import net.java.dev.jna.jna.Pointer;
+import com.sun.jna.Pointer;
 
 import ca.weblite.objc.Client;
 import ca.weblite.objc.Proxy;

@@ -1,8 +1,8 @@
 
 package net.filebot.platform.gnome;
 
-import net.java.dev.jna.jna.Library;
-import net.java.dev.jna.jna.Pointer;
+import com.sun.jna.Library;
+import com.sun.jna.Pointer;
 
 interface LibGIO extends Library {
 

@@ -20,9 +20,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import net.java.dev.jna.jna.Platform;
-import net.java.dev.jna.jna.Pointer;
-import net.java.dev.jna.jna.WString;
+import com.sun.jna.Platform;
+import com.sun.jna.Pointer;
+import com.sun.jna.WString;
 
 import net.filebot.media.ImageMetadata;
 import net.filebot.media.MediaCharacteristics;

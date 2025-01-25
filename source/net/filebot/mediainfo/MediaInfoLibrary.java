@@ -4,13 +4,13 @@ import static java.util.Collections.*;
 
 import java.lang.reflect.Method;
 
-import net.java.dev.jna.jna.FunctionMapper;
-import net.java.dev.jna.jna.Library;
-import net.java.dev.jna.jna.Native;
-import net.java.dev.jna.jna.NativeLibrary;
-import net.java.dev.jna.jna.Platform;
-import net.java.dev.jna.jna.Pointer;
-import net.java.dev.jna.jna.WString;
+import com.sun.jna.FunctionMapper;
+import com.sun.jna.Library;
+import com.sun.jna.Native;
+import com.sun.jna.NativeLibrary;
+import com.sun.jna.Platform;
+import com.sun.jna.Pointer;
+import com.sun.jna.WString;
 
 interface MediaInfoLibrary extends Library {
 

@@ -14,7 +14,7 @@ import java.nio.file.LinkOption;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.List;
 
-import net.java.dev.jna.jna.Platform;
+import com.sun.jna.Platform;
 
 public enum StandardRenameAction implements RenameAction {
 

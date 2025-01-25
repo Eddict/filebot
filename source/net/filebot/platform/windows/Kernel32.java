@@ -1,11 +1,11 @@
 package net.filebot.platform.windows;
 
-import net.java.dev.jna.jna.Native;
-import net.java.dev.jna.jna.NativeLong;
-import net.java.dev.jna.jna.platform.win32.WTypes.LPWSTR;
-import net.java.dev.jna.jna.platform.win32.WinDef.UINTByReference;
-import net.java.dev.jna.jna.win32.StdCallLibrary;
-import net.java.dev.jna.jna.win32.W32APIOptions;
+import com.sun.jna.Native;
+import com.sun.jna.NativeLong;
+import com.sun.jna.platform.win32.WTypes.LPWSTR;
+import com.sun.jna.platform.win32.WinDef.UINTByReference;
+import com.sun.jna.win32.StdCallLibrary;
+import com.sun.jna.win32.W32APIOptions;
 
 public interface Kernel32 extends StdCallLibrary {
 

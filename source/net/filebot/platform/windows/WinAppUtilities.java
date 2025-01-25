@@ -8,17 +8,17 @@ import java.util.logging.Level;
 
 import javax.swing.UIManager;
 
-import net.java.dev.jna.jna.Memory;
-import net.java.dev.jna.jna.Native;
-import net.java.dev.jna.jna.NativeLong;
-import net.java.dev.jna.jna.WString;
-import net.java.dev.jna.jna.platform.win32.Shell32;
-import net.java.dev.jna.jna.platform.win32.W32Errors;
-import net.java.dev.jna.jna.platform.win32.WTypes.LPWSTR;
-import net.java.dev.jna.jna.platform.win32.WinDef.UINT;
-import net.java.dev.jna.jna.platform.win32.WinDef.UINTByReference;
-import net.java.dev.jna.jna.platform.win32.WinError;
-import net.java.dev.jna.jna.ptr.PointerByReference;
+import com.sun.jna.Memory;
+import com.sun.jna.Native;
+import com.sun.jna.NativeLong;
+import com.sun.jna.WString;
+import com.sun.jna.platform.win32.Shell32;
+import com.sun.jna.platform.win32.W32Errors;
+import com.sun.jna.platform.win32.WTypes.LPWSTR;
+import com.sun.jna.platform.win32.WinDef.UINT;
+import com.sun.jna.platform.win32.WinDef.UINTByReference;
+import com.sun.jna.platform.win32.WinError;
+import com.sun.jna.ptr.PointerByReference;
 
 public class WinAppUtilities {
 

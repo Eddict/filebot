@@ -1,6 +1,6 @@
 package net.filebot.mediainfo;
 
-import net.java.dev.jna.jna.Platform;
+import com.sun.jna.Platform;
 
 public class MediaInfoException extends RuntimeException {
 
