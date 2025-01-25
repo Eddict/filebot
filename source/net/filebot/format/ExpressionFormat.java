@@ -23,9 +23,9 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptException;
 import javax.script.SimpleScriptContext;
 
-import org.apache.groovy.control.CompilerConfiguration;
-import org.apache.groovy.control.MultipleCompilationErrorsException;
-import org.apache.groovy.jsr223.GroovyScriptEngineImpl;
+import org.codehaus.groovy.control.CompilerConfiguration;
+import org.codehaus.groovy.control.MultipleCompilationErrorsException;
+import org.codehaus.groovy.jsr223.GroovyScriptEngineImpl;
 
 import groovy.lang.GroovyClassLoader;
 import groovy.lang.GroovyRuntimeException;
