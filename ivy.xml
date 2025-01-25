@@ -36,8 +36,9 @@
             <artifact name="xmlrpc" type="pom" ext="pom"/>
         </dependency>
         <dependency org="org.jsoup" name="jsoup" rev="1.18.3" conf="binaries->default" />
-
-
+        <dependency org="org.imgscalr" name="imgscalr-lib" rev="4.2" conf="binaries->default" />
+        <dependency org="com.miglayout" name="miglayout-swing" rev="11.4.2" conf="binaries->default" />
+        <dependency org="one.util" name="streamex" rev="0.8.3" conf="binaries->default" />
 
         <!-- <dependency org="org.apache.groovy" name="groovy-all" rev="4.0.4" conf="binaries->default">
             <artifact name="groovy-all" type="pom" ext="pom"/>
